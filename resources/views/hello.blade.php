@@ -22,7 +22,7 @@
 <body>
     <div class="main-div">
         <h1>
-            Hi, From Khaled
+            Hi, From {{ $name?? 'any one..' }} 
         </h1>
     </div>
 </body>
