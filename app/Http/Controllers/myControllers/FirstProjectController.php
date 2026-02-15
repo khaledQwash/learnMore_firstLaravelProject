@@ -19,7 +19,13 @@ class FirstProjectController extends Controller
         }else{
             $name = $index;
         }
-        return view('hello')->with('name', $name);
+        // return view('hello')->with('name', $name);
+        // return view('hello')->with('name', $name);
+        // return view('hello', [
+        //     'name'=>$name
+        // ]);
+        return view('hello', compact('name'));
+
     }
     function test1($name)
     {
